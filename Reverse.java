@@ -17,14 +17,12 @@ public class Reverse {
         while (left < right) {
 
             // checking if the left string is numeric
-            boolean isDigit = Character.isDigit(words[left].charAt(0));
-            if (isDigit) {
+            if (Character.isDigit(words[left].charAt(0))) {
                 left++;
             }
 
             // checking if the right string is numeric
-            boolean isDigit2 = Character.isDigit(words[right].charAt(0));
-            if (isDigit2) {
+            while(Character.isDigit(words[right].charAt(0))) {
                 right--;
             }
             if (left < right) {
